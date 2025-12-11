@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import {Button} from "../components/ui/button";
+
 
 
 export function meta({}: Route.MetaArgs) {
@@ -12,7 +12,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div>
-      <Button>Click me</Button>
+      
     </div>
   )
   
