@@ -3,10 +3,10 @@ import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signInSchema } from "@/lib/schema";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "../../../~/components/ui/card";
-import {Form, FormItem, FormLabel, FormControl, FormField, FormMessage} from "../../../~/components/ui/form";
-import { Input } from "../../../~/components/ui/input";
-import { Button } from "../../../~/components/ui/button";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "~/components/ui/card";
+import {Form, FormItem, FormLabel, FormControl, FormField, FormMessage} from "~/components/ui/form";
+import { Input } from "~/components/ui/input";
+import { Button } from "~/components/ui/button";
 import { Link } from "react-router";
 type SigninFormData = z.infer<typeof signInSchema>;
 const SignIn = () => {
@@ -21,8 +21,8 @@ const SignIn = () => {
         console.log(data);
     }
     return(
-    <div className="min-h-screen flex-col items-center justify-center bg-muted/40 p-4">
-        <Card className="w-full max-w-md mx-auto mt-32">
+    <div className="min-h-screen flex-col items-center justify-center bg-gray-100 p-4 shadow-lg ">
+        <Card className="w-full max-w-md mx-auto mt-32 shadow-lg border-0">
             <CardHeader className="mb-4">
                 <CardTitle className="text-2xl text-center">Welcome Back</CardTitle>
                 <CardDescription className="text-xl text-center">Please sign in to your account</CardDescription> 

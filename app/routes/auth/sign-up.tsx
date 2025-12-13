@@ -23,8 +23,8 @@ const SignUp = () => {
         console.log(data);
     }
     return(
-    <div className="min-h-screen flex-col items-center justify-center bg-muted/40 p-4">
-        <Card className="w-full max-w-md mx-auto mt-16">
+    <div className="min-h-screen flex-col items-center  bg-gray-100 shadow-lg justify-center p-4">
+        <Card className="w-full max-w-md mx-auto  shadow-lg mt-16 border-0">
             <CardHeader className="mb-4">
                 <CardTitle className="text-2xl text-center">Welcome</CardTitle>
                 <CardDescription className="text-xl text-center">Please sign up for a new account</CardDescription> 

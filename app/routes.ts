@@ -1,13 +1,15 @@
-import { type RouteConfig, index, layout, route} from "@react-router/dev/routes";
+import { type RouteConfig, layout, route } from "@react-router/dev/routes";
 
-export default [layout("routes/auth/auth-layout.tsx", [
+export default [
+  // AUTH ROUTES
+  layout("routes/auth/auth-layout.tsx", [
     route("sign-in", "routes/auth/sign-in.tsx"),
     route("sign-up", "routes/auth/sign-up.tsx"),
     route("forgot-password", "routes/auth/forgot-password.tsx"),
-    route("dashboard", "routes/dashboard/dashboard-layout.tsx")
-   
+  
+  ]),
 
-
-])
-    
+  // DASHBOARD ROUTE (TOP LEVEL)
+  route("dashboard", "routes/pages/ProjectList/ProjectList.jsx"),
+  route("/project/:id", "routes/pages/project/ProjectDetails.jsx"),
 ] satisfies RouteConfig;
